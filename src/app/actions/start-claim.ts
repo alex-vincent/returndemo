@@ -13,5 +13,5 @@ export async function startClaim(formData: FormData) {
     const mockClaimId = `${result.order.id}-${Math.random().toString(36).substring(2, 7)}`;
     console.log("Mocking Claim Creation ID:", mockClaimId);
 
-    return { success: true, claimId: mockClaimId };
+    return { success: true, claimId: mockClaimId, error: null };
 }

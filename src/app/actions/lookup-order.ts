@@ -26,7 +26,8 @@ export async function lookupOrder(formData: FormData) {
                 line_items: [
                     { id: 1, name: "Organic Mattress", sku: "MAT-ORG-Q", quantity: 1, price: "1200", image: { src: "https://placehold.co/100x100?text=Mattress" } }
                 ]
-            }
+            },
+            error: null
         };
     }
 
@@ -44,7 +45,8 @@ export async function lookupOrder(formData: FormData) {
                 line_items: [
                     { id: 3, name: "Dresser (5-Drawer)", sku: "FURN-DRS", quantity: 1, price: "850", image: { src: "https://placehold.co/100x100?text=Dresser" } }
                 ]
-            }
+            },
+            error: null
         };
     }
 
@@ -62,7 +64,8 @@ export async function lookupOrder(formData: FormData) {
                 line_items: [
                     { id: 4, name: "Clearance Sheet Set (Final Sale)", sku: "ACC-SHT-CLR", quantity: 1, price: "50", image: { src: "https://placehold.co/100x100?text=Sheets" } }
                 ]
-            }
+            },
+            error: null
         };
     }
 
@@ -81,7 +84,8 @@ export async function lookupOrder(formData: FormData) {
                     { id: 5, name: "Sleep Bundle (Mattress + Pillow)", sku: "BND-SLP", quantity: 1, price: "1350", image: { src: "https://placehold.co/100x100?text=Bundle" } },
                     { id: 6, name: "Extra Pillow", sku: "ACC-PLW", quantity: 1, price: "0", image: { src: "https://placehold.co/100x100?text=Free+Pillow" } }
                 ]
-            }
+            },
+            error: null
         };
     }
 
@@ -98,6 +102,7 @@ export async function lookupOrder(formData: FormData) {
             line_items: [
                 { id: 1, name: "Default Mock Item", sku: "MOCK-1", quantity: 1, price: "100", image: { src: "https://placehold.co/100x100?text=Item" } }
             ]
-        }
+        },
+        error: null
     };
 }

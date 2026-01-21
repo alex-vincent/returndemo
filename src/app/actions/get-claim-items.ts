@@ -10,7 +10,8 @@ export async function getClaimItems(claimId: string) {
             items: [{
                 id: "item-1", claim_id: claimId, sku: "MAT-ORG-Q", quantity: 1, reason_code: "too_firm",
                 metadata: { name: "Organic Mattress", image: "https://placehold.co/100x100?text=Mattress" }
-            }]
+            }],
+            error: null
         };
     }
 
@@ -20,7 +21,8 @@ export async function getClaimItems(claimId: string) {
             items: [{
                 id: "item-3", claim_id: claimId, sku: "FURN-DRS", quantity: 1, reason_code: "broken_part",
                 metadata: { name: "Dresser (5-Drawer)", image: "https://placehold.co/100x100?text=Dresser" }
-            }]
+            }],
+            error: null
         };
     }
 
@@ -38,6 +40,7 @@ export async function getClaimItems(claimId: string) {
                     image: "https://placehold.co/100x100?text=Mock"
                 }
             }
-        ]
+        ],
+        error: null
     };
 }

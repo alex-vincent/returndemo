@@ -33,5 +33,5 @@ export async function getClaims(status?: string) {
         filtered = mockClaims.filter(c => c.status === status);
     }
 
-    return { success: true, claims: filtered };
+    return { success: true, claims: filtered, error: null };
 }
