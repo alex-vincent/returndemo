@@ -8,5 +8,5 @@ export async function updateClaimStatus(claimId: string, status: string, actor: 
     revalidatePath(`/admin/dashboard/${claimId}`);
     revalidatePath('/admin/dashboard');
 
-    return { success: true };
+    return { success: true, error: null };
 }
