@@ -28,5 +28,5 @@ export async function getClaimContext(claimId: string) {
         status: "OPEN"
     };
 
-    return { success: true, claim: mockClaim, order: result.order };
+    return { success: true, claim: mockClaim, order: result.order, error: null };
 }
